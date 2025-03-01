@@ -1,7 +1,7 @@
 import streamlit as st
 
 # App Title
-st.title("Multi-Converter (Unit + Currency)")
+st.title("Multi-Converter (Unit + 💰Currency)")
 
 # Conversion Type Selection
 conversion_type = st.radio("Select Conversion Type:", ["Length", "💰Currency"])
@@ -28,7 +28,7 @@ if conversion_type == "Length":
         converted_value = amount * conversion_factors[from_unit][to_unit]
         st.success(f"{amount} {from_unit} = 📏{converted_value:.4f} {to_unit}")
 
-elif conversion_type == "Currency":
+elif conversion_type == "💰Currency":
     # Currency Conversion
     st.subheader("Currency Converter")
 
