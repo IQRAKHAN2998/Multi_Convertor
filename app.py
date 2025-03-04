@@ -1,8 +1,8 @@
 import streamlit as st
 
 # App Title
-st.title("Multi-Converter (Unit + 💰Currency)")
 
+st.markdown("<h1 style='color: purple;'> Multi-Convertor (Unit & 💰Currency)</h1>", unsafe_allow_html=True)
 # Conversion Type Selection
 conversion_type = st.radio("Select Conversion Type:", ["Length", "💰Currency"])
 
